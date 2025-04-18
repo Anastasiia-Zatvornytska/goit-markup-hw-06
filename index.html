@@ -25,7 +25,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header class="header">
+    <header class="header hidden">
       <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo-web"
@@ -66,7 +66,7 @@
         </button>
       </div>
 
-      <div class="mobile-menu is-open">
+      <div class="mobile-menu">
         <div class="container mobile-menu-container">
           <button class="mobile-menu-close">
             <svg class="modal-btn-close-icon" width="8" height="8">
@@ -474,7 +474,7 @@
       </section>
     </main>
 
-    <footer class="footer-section hidden">
+    <footer class="footer-section">
       <div class="container footer-container">
         <div class="footer-logo-text">
           <a href="./index.html" class="footer-logo-web"
@@ -623,9 +623,11 @@
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the&nbsp;
-              <a href="" class="policy-link">Privacy Policy</a></label
-            >
+              <span class="modal-checkbox-text-link">
+                I accept the terms and conditions of the&nbsp;
+                <a href="" class="policy-link">Privacy Policy</a>
+              </span>
+            </label>
           </div>
           <button type="submit" class="modal-btn">Send</button>
         </form>

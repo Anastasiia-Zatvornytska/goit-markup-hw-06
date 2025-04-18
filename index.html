@@ -21,6 +21,8 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <header class="header">
@@ -41,6 +43,7 @@
             </li>
           </ul>
         </nav>
+
         <address class="contact-info">
           <ul class="header-adress-list">
             <li>
@@ -55,18 +58,102 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="modal-btn-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-nav-list">
+              <li>
+                <a
+                  href="./index.html"
+                  class="mobile-menu-nav-element mobile-menu-nav-studio"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a href="" class="mobile-menu-nav-element">Portfolio</a>
+              </li>
+              <li>
+                <a href="" class="mobile-menu-nav-element">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address>
+            <ul class="mobile-menu-adress-list">
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-menu-adress-element mobile-menu-adress-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+110001111111" class="mobile-menu-adress-element"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <div class="mobile-menu-networks-block">
+            <ul class="mobile-menu-networks-list">
+              <li class="mobile-menu-networks-icons">
+                <a class="mobile-menu-networks-link" href="">
+                  <svg class="mobile-menu-networks-item" height="24" width="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-networks-icons">
+                <a class="mobile-menu-networks-link" href="">
+                  <svg class="mobile-menu-networks-item" height="24" width="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-networks-icons">
+                <a class="mobile-menu-networks-link" href="">
+                  <svg class="mobile-menu-networks-item" height="24" width="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-networks-icons">
+                <a class="mobile-menu-networks-link" href="">
+                  <svg class="mobile-menu-networks-item" height="24" width="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="section-one">
+      <section class="section-one hidden">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button type="button" class="main-button">Order Service</button>
         </div>
       </section>
 
-      <section class="section-two">
+      <section class="section-two hidden">
         <div class="container">
           <h2 class="section-title visually-hidden">Advantages</h2>
           <ul class="section-two-list">
@@ -122,7 +209,7 @@
         </div>
       </section>
 
-      <section class="section-three">
+      <section class="section-three hidden">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="section-three-list">
@@ -278,7 +365,7 @@
         </div>
       </section>
 
-      <section class="section-four">
+      <section class="section-four hidden">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -387,7 +474,7 @@
       </section>
     </main>
 
-    <footer class="footer-section">
+    <footer class="footer-section hidden">
       <div class="container footer-container">
         <div class="footer-logo-text">
           <a href="./index.html" class="footer-logo-web"
@@ -454,7 +541,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop hidden">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-btn-close-icon" width="8" height="8">

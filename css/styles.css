@@ -686,11 +686,14 @@ fill: #2f2f37;}
     background-color: #ffffff;
     padding-top: 96px;
     padding-bottom: 96px;
+    justify-content: center;
 
 }
 
 .section-two-container {
-    max-width: 100%;
+    display: flex;
+    max-width: 1128px;
+    justify-content: space-between;
 }
 
 .section-two-list {
@@ -916,6 +919,10 @@ fill: #2f2f37;}
         justify-content: center;
                
     }
+
+    /* .section-three-container {
+        max-width: 1128px;
+    } */
     
     .photo-team {
         flex-basis: calc((100% - 72px) / 4);
@@ -933,6 +940,7 @@ fill: #2f2f37;}
     padding-top: 96px;
     padding-bottom: 96px;
 }
+
 
 .section-four .section-title {
     margin-bottom: 72px;
@@ -1024,13 +1032,13 @@ fill: #2f2f37;}
 }
 
 .portfolio-item {
-    max-width: 356px;
-    flex-basis: calc((100% - 24px) / 3);
+    flex-basis: calc((100% - 24px) / 2);
     
 }
 }
 
 @media screen and (min-width: 1158px) {
+   
     .portfolio-list {
             display: flex;
             flex-wrap: wrap;
@@ -1038,7 +1046,8 @@ fill: #2f2f37;}
         }
     
     .portfolio-item {
-            max-width: 360px;}
+    flex-basis: calc((100% - 48px) / 3);
+    }
 
     .portfolio-item {
         box-shadow: none;
@@ -1155,8 +1164,8 @@ fill: #2f2f37;}
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
-    
+    gap: 24px;
+        
 }
 
 .footer-input {
@@ -1225,6 +1234,7 @@ input::placeholder {
 .footer-logo-text {
     align-items: flex-start;
     text-align: left;
+    margin-right: 24px;
 }
 
 .footer-network-text {
@@ -1249,20 +1259,21 @@ gap: 24px;
     .footer-section {
             padding-top: 100px;
             padding-bottom: 100px;
-            padding-left: 15px;
-            padding-right: 15px;
+            
 }
 
 
-    .footer-container {              
-        display: flex;
-        flex-direction: row;
+    .footer-container {
         align-items: baseline;
         max-width: 100%;
-        padding-left: 16px;
-        padding-right: 16px;
+        flex-wrap: nowrap;
         justify-content: center;
-    }
+        text-align: center;
+        
+}
+         
+        
+      
 
     .footer-logo-text {
     align-items: flex-start;
@@ -1271,9 +1282,6 @@ gap: 24px;
     }
 
     .footer-networks-block {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         margin-right: 80px;
     }
 
@@ -1288,11 +1296,13 @@ gap: 24px;
         flex-direction: row;
         gap: 24px;
         align-items: center;
+        
     }
 
     .footer-input {
         width: 264px;
         height: 40px;
     }
-}
 
+   
+}

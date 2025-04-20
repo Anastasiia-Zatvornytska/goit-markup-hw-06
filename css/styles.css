@@ -784,7 +784,9 @@ fill: #2f2f37;}
     background-color: #f4f4fd;
     padding-top: 96px;
     padding-bottom: 96px;
+        
 }
+
 
 .weird-div {
     padding: 32px 0;
@@ -795,10 +797,13 @@ fill: #2f2f37;}
     flex-wrap: wrap;
     gap: 72px;
     justify-content: center;
-    
+           
 }
 
 .photo-team {
+    max-width: 264px;
+    margin-left: 28px;
+    margin-right: 28px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -835,6 +840,8 @@ fill: #2f2f37;}
     gap: 24px;
     justify-content: center;
     margin-top: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .networks-link {
@@ -863,7 +870,8 @@ fill: #2f2f37;}
 .section-three {
         padding-left: 108px;
         padding-right: 108px;
-    }
+       
+}
 
 .section-three-list {
     gap: 64px 24px;
@@ -871,7 +879,8 @@ fill: #2f2f37;}
 }
 
 .photo-team {
-    flex-basis: calc((100% - 24px) / 2);}
+    flex-basis: calc((100% - 24px) / 2);
+}
 
 }
 
@@ -879,15 +888,16 @@ fill: #2f2f37;}
     .section-three {
         padding-top: 120px;
         padding-bottom: 120px;
+        padding-left: 0;
+        padding-right: 0;
         justify-content: center;
+               
     }
-
-    .section-three-list {
-        gap: 24px;
-    }
-
+    
     .photo-team {
         flex-basis: calc((100% - 72px) / 4);
+        margin-left: 0;
+        margin-right: 0;
     }
 
 }

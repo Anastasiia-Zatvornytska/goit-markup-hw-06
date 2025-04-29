@@ -694,14 +694,15 @@ fill: #2f2f37;}
     display: flex;
     max-width: 1128px;
     justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .section-two-list {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
-
-}
+    }
 
 .list-title {
     font-weight: 700;
@@ -976,7 +977,6 @@ fill: #2f2f37;}
 }
 
 .portfolio-item {
-    max-width: 288px;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #FFFFFF;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1025,6 +1025,7 @@ fill: #2f2f37;}
         padding-top: 120px;
         padding-bottom: 120px;
     }
+
 
 .portfolio-list {
     gap: 72px 24px;
